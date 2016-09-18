@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t piqueachu .
+docker run -dt -v "$(pwd)/volume":/usr/src/app/volume piqueachu
